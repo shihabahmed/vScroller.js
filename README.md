@@ -17,6 +17,8 @@ An vertical list scroller that scrolls through content if it does not fit inside
 	$('.list-container .list').vscroller([options]);
 
 ##Options
-*direction*: Direction to scroll the content. Value can be <code>up/down</code>. Default is <code>'up'</code>.
-*interval*: Higher interval means slower scrolling speed. Default is 35.
-*pauseOnHover*: Whether to pause scrolling on mouseover. Value can be <code>true/false</code>. Default is <code>true</code>.
+**direction**: Direction to scroll the content. Value can be <code>up/down</code>. Default is <code>'up'</code>.
+
+**interval**: Higher interval means slower scrolling speed. Default is 35.
+
+**pauseOnHover**: Whether to pause scrolling on mouseover. Value can be <code>true/false</code>. Default is <code>true</code>.
