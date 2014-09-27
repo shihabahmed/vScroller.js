@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vScroller.js</title>
+	<style>
+		 ul {
+			padding:0;
+			margin: 0;
+		}
+		li {
+			list-style:none;
+		} 
+		.scrollable {
+			border: solid 1px #ddd;
+			width: 100px;
+			height: 150px;
+			padding:10px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="scrollable scrollable1">
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+			<li>Item 7</li>
+			<li>Item 8</li>
+			<li>Item 9</li>
+			<li>Item 10</li>
+		</ul>
+	</div>
+	<br>
+	<div class="scrollable scrollable2">
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+			<li>Item 7</li>
+			<li>Item 8</li>
+			<li>Item 9</li>
+			<li>Item 10</li>
+		</ul>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="vScroller.js"></script>
+	<script>
+		$(function() {
+			$('.scrollable1 ul').vscroller();
+			$('.scrollable2 ul').vscroller({
+				direction: "down",
+				interval: 20,
+				pauseOnHover: false
+			});
+		});
+	</script>
+</body>
+</html>
